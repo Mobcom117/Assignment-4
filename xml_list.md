@@ -4,4 +4,3 @@
 -	fragment_favorite_coffee: menampilkan coffee yang di-favorit-kan
 -	bottom_nav_menu: mengatur bottom navigation
 -	my_nav: menampilkan navigation graph
--	activity_main: 
