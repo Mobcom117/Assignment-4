@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <?xml version="1.0" encoding="utf-8"?>
+
+    <item android:title="List Coffe"
+        android:id="@+id/list_coffe"
+        android:icon="@drawable/ic_baseline_list_24"/>
+    <item android:title="Favourite Coffe"
+        android:id="@+id/favourite_coffe"
+        android:icon="@drawable/ic_baseline_thumb_up_alt_24"/>
+
+</menu>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/listCoffee">
+    <fragment
+        android:id="@+id/listCoffee"
+        android:name="unj.cs.hw4.listCoffee"
+        android:label="fragment_list_coffee"
+        tools:layout="@layout/fragment_list_coffee" >
+        <action
+            android:id="@+id/action_listCoffee_to_detailCoffee2"
+            app:destination="@id/detailCoffee" />
+        <action
+            android:id="@+id/action_listCoffee_to_favoriteCoffee2"
+            app:destination="@id/favoriteCoffee" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailCoffee"
+        android:name="unj.cs.hw4.detailCoffee"
+        android:label="fragment_detail_coffee"
+        tools:layout="@layout/fragment_detail_coffee" >
+        <action
+            android:id="@+id/action_detailCoffee_to_listCoffee"
+            app:destination="@id/listCoffee" />
+        <action
+            android:id="@+id/action_detailCoffee_to_favoriteCoffee2"
+            app:destination="@id/favoriteCoffee" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteCoffee"
+        android:name="unj.cs.hw4.favoriteCoffee"
+        android:label="fragment_favorite_coffee"
+        tools:layout="@layout/fragment_favorite_coffee" >
+        <action
+            android:id="@+id/action_favoriteCoffee_to_detailCoffee2"
+            app:destination="@id/detailCoffee" />
+        <action
+            android:id="@+id/action_favoriteCoffee_to_listCoffee2"
+            app:destination="@id/listCoffee" />
+    </fragment>
+</navigation>
